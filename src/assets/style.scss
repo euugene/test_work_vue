@@ -1,0 +1,75 @@
+.home{
+  display: flex;
+  flex-direction: column;
+}
+.v-content{
+  display: flex;
+}
+.v-catalog{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 80%;
+}
+.v-catalog-element{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  max-height: 300px;
+  margin: 30px;
+  &__img{
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+  }
+  &__name, &__price, &__consist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3px;
+    span{
+      text-align: center;
+    }
+  } 
+}
+.v-menu{
+  width: 20%;
+  background: #fff;
+  top: 100%;
+  box-shadow: -3px 3px 10px -2px rgba(0,0,0,.1);
+  border: 1px solid rgba(0,0,0,.1);
+  border-top: none;
+  &__title{
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+  }
+}
+.v-menu-element{
+  a{
+    text-decoration: none;
+  }
+  &__item{
+        display: block; 
+        padding: 30px 20px;
+        color: #222; 
+        font-size: .9em;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+  }
+  &__item:hover{
+    background: rgba(0,0,0,.15)
+  }
+}
+.v-search{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  &__form{
+     
+  }
+
+  &__button{
+    height: 40px;
+    width: 80px;
+  }
+}
