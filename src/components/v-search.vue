@@ -1,6 +1,7 @@
 <template>
   <div class="v-search">
-    <p>Поиск по каталогу</p>
+    <p class="v-search-desktop">Поиск по каталогу</p>
+    <p class="v-search-mobile">Поиск</p>
     <input class="v-search__text" type="text" v-model="searchValue">
     <button class="v-search__button" @click.prevent="search(searchValue)">Найти</button>
   </div>
@@ -31,7 +32,6 @@ export default {
     ]),
     search (value) {
       this.GET_SEARCH_VALUE_TO_VUEX(value)
-      // this.SET_ELEMENTS_TO_STATE(value)
     }
   },
   watch: {},

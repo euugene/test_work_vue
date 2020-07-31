@@ -8,15 +8,15 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    meta: { layout: 'main-layout' }
-    // component: () => import('./../components/catalog/v-catalog.vue')
-  },
-  {
-    path: '/catalog',
-    name: 'VCatalog',
     meta: { layout: 'main-layout' },
     component: () => import('./../components/catalog/v-catalog.vue')
   }
+  // {
+  //   path: '/catalog',
+  //   name: 'VCatalog',
+  //   meta: { layout: 'main-layout' },
+  //   component: () => import('./../components/catalog/v-catalog.vue')
+  // }
 ]
 const router = new VueRouter({
   mode: 'history',

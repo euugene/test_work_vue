@@ -1,10 +1,22 @@
 <template>
-  <div class='v-menu v-menu-mobile'>
+  <div class='v-menu'>
+    <div class="v-menu-desktop">
     <div class="v-menu__title"><span>Меню</span></div>
     <VMenuElement  v-for="category in CATEGORIES.data.results"
                     :key="category.id"
                     @changeMessage='onChange'
                     v-bind:category_data="category"/>
+  </div>
+    <div class="v-menu-mobile">
+    <input id="menu__toggle" type="checkbox" />
+    <label class="menu__btn" for="menu__toggle">
+    <span></span>
+  </label>
+    <VMenuElement v-for="category in CATEGORIES.data.results"
+                    :key="category.id"
+                    @changeMessage='onChange'
+                    v-bind:category_data="category"/>
+    </div>
   </div>
 </template>
 
