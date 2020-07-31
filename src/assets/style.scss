@@ -1,0 +1,149 @@
+.home{
+  display: flex;
+  flex-direction: column;
+}
+.v-menu-element__btn-mobile{
+  display: none;
+}
+.v-content{
+  display: flex;
+}
+.v-catalog{
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 80%;
+}
+.v-catalog-element:hover{
+  background: rgba(0,0,0,.15)
+}
+.v-catalog-element{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  max-height: 500px;
+  margin: 30px;
+  border: 1px solid rgba(0,0,0,.1);
+  border-radius: 5px;
+  padding: 20px;
+  position: relative;
+
+  &__img{
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+  }
+  &__name, &__price, &__consist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 3px;
+  &__consis{
+    margin-bottom: 5px;
+  }
+    span{
+      text-align: center;
+    }
+  } 
+}
+.v-menu{
+  min-width: 20%;
+  background: #fff;
+  top: 100%;
+  box-shadow: -3px 3px 10px -2px rgba(0,0,0,.1);
+  border: 1px solid rgba(0,0,0,.1);
+  border-top: none;
+  &__title{
+    padding: 20px 0;
+    align-items: center;
+    margin: 0 auto;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+  }
+  span{
+    margin: 0 40%;
+    font-size: 22px;
+  }
+}
+.v-menu-element{
+  a{
+    text-decoration: none;
+  }
+  &__item{
+        display: block; 
+        padding: 30px 20px;
+        color: #222; 
+        font-size: .9em;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+  }
+  &__item:hover{
+    background: rgba(0,0,0,.15)
+  }
+}
+.v-search{
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  align-items: center;
+  &__text{
+    width: 200px;
+    height: 20px;
+    margin: 5px;
+  }
+  &__button{
+    height: 30px;
+    width: 80px;
+  }
+  p{
+    font-size: 24px;
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .v-catalog-element{
+
+    margin: 10px;
+    max-width: 300px;
+    
+  }
+}
+@media (max-width: 925px) {
+  .v-catalog-element{
+
+    margin: 10px;
+    // max-width: 250px;
+    max-width: 37%;
+  }
+}
+// @media (max-width: 860px) {
+// .v-menu{
+//   display: none;
+//   }
+//   .v-menu-element__btn-mobile{
+//     display: block;
+//   }
+// // .v-content{
+// //   display: flex;
+// //   flex-wrap: wrap;
+
+// // }
+// .v-catalog-element{
+//   display: flex;
+//   flex-wrap: wrap;
+//   // flex-direction: column;
+//   max-width: 200px;
+//   max-height: 500px;
+//   margin: 10px;
+//   border: 1px solid rgba(0,0,0,.1);
+//   border-radius: 5px;
+//   padding: 20px;
+//   position: relative;
+  
+// }
+// .v-menu-mobile{
+//   display: block;
+
+// }
+// }
